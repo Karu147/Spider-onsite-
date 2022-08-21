@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+    </head>
+    <title>SNAKE GAME</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+        body {
+            background: rgb(212, 211, 211);
+        }
+
+        .grid {
+            width: 200px;
+            height: 200px;
+            border: 5px solid red;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .grid div {
+            width: 20px;
+            height: 20px;
+        }
+        .snake {
+            background: blue;
+        }
+        .apple {
+            background: yellow;
+            border-radius: 15px;
+        }
+        .popup {
+            width: 100px;
+            height: 100px;
+            top: 100px;
+            position: fixed;
+            left: 100px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+        .top {
+            margin-left: 20px;
+        }
+        .bottom {
+            margin-left: 10px;
+        }
+    </style>
+    <body>
+        <h2>SNAKE GAME</h2>
+        <p>SCORE:</p>
+        <div class="scoreDisplay"></div>
+        <div class="button">
+        <button class="top">TOP</button>
+        <br>
+        <button class="left">LEFT</button>
+        <button class="right">RIGHT</button>
+        <br>
+        <button class="bottom">BOTTOM</button>
+        <div class="grid"></div>
+        </div>
+        <div class="popup">
+        <button class="playAgain">PLAY AGAIN</button>
+        </div>
+    </body>
+    <script src="snake_game.js"></script>
+</html>

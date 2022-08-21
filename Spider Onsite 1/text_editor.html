@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>TEXT EDITOR</title>
+        <style>
+            body {
+                background-color: burlywood;
+            }
+            h2 {
+                font-family:fantasy ;
+                font-size:x-large;
+                text-align: center;
+                font-style:italic;
+            }
+            form {
+                padding: 40px;
+            }
+            select {
+                margin-left: 40px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h2>
+            TEXT EDITOR
+        </h2>
+        <select id = "Font_family" onchange = "favFamily(this)" >
+            <option> Font Family </option>
+            <option> Arial </option>
+            <option> Courier New </option>
+            <option> Impact </option>
+            <option> Lucida Sans Unicode </option>
+            <option> Times New Roman </option>
+            <option> Georgia</option>
+            <option> Palatino Linotype</option>
+            <option> Book Antiqua</option>
+        </select>
+        <select id = "Font_size" onchange = "favSize(this)" >
+            <option> Font size </option>
+            <option> 5 </option>
+            <option> 10 </option>
+            <option> 15 </option>
+            <option> 20 </option>
+            <option> 25 </option>
+            <option> 30 </option>
+            <option> 35 </option>
+        </select>
+        <select id="Font_style" onchange="favStyle(this)">
+            <option> Font Style </option>
+            <option> Italic </option>
+            <option> Bold </option>
+            <option> Bold-Italic </option> 
+            
+        </select>
+        <form action="/action_page.php">
+            <textarea id="text" rows="40" cols="180">
+            </textarea> <br>
+            <br>
+            <input type="button" id= "dwn-btn" value="Download"/>
+        </form>
+    </body>
+    <script src="text_editor.js"></script>
+</html>
